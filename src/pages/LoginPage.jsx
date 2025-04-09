@@ -4,16 +4,19 @@ import Login from '../components/auth/Login';
 
 const LoginPage = () => {
   return (
-    <Container maxWidth="lg">
-      <Box sx={{ 
-        minHeight: '100vh', 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center'
-      }}>
-        <Login />
-      </Box>
-    </Container>
+    <Box 
+      sx={{ 
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #1976d2 0%, #2196f3 100%)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: { xs: 2, sm: 3 }
+      }}
+    >
+      <Login />
+    </Box>
   );
 };
 
