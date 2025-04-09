@@ -33,17 +33,19 @@ const MainLayout = ({ children }) => {
   sx={{
     flexGrow: 1,
     padding: 3,
+    paddingLeft: 0, // Remove left padding
     marginTop: "64px",
-    marginLeft: "240px",
+    // marginLeft: "2px", // This correctly aligns with sidebar width
     width: "calc(100% - 240px)",
     display: "flex",
     flexDirection: "column",
-    backgroundColor: "white !important", // Add !important flag
+    backgroundColor: "white !important",
     overflow: "auto",
     position: "relative",
     zIndex: 1,
   }}
 >
+
 
 
         <Box sx={{ flex: 1 }}>{children}</Box>
